@@ -1,0 +1,163 @@
+body {
+	background-color: #EBEBEB;
+}
+
+.headerThing {
+	text-align: center;
+	font-size: 22px;
+	margin-bottom: 40px;
+}
+
+.purple{
+  color: #3A9FC9;
+  font-weight: 300;
+  font-size: 52px;
+}
+
+.panel {
+	min-width: 400px;
+	min-height: 50px;
+	width:80%;
+	background-color: #FFF;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 0px;
+	margin-top: 20px;
+}
+
+.form-control {
+	border-radius: 0px;
+	width: 80%;
+	font-size: 16px;
+	margin-right: auto;
+	margin-left: auto;
+	color:#000;
+	font-family: arial,sans-serif;
+	border-color: #D9D9D9;
+
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.form-control:focus {
+	box-shadow: none;
+	border-color: #ADADAD;
+}
+
+.searchSelect {
+	margin-top: -28px;
+	float: right;
+	margin-right: 10px;
+	width:125px;
+}
+
+.playlistList {
+	margin-left: 0px;
+	margin-right: 20px;
+	margin-top: 20px;
+	width:100%;
+	padding-right: 40px;
+}
+
+.playlistEntry {
+	min-height: 70px;
+	border-bottom: 1px solid rgb(225, 230, 233);
+	padding-top: 10px
+}
+
+ul:last-child {
+	border-bottom: none;
+}
+
+.ActionMenu.pill {
+	float:right;
+	width: 40px;
+	height: 34px;
+	cursor: pointer;
+	color: rgb(148, 153, 156);
+	margin-top: 12px;
+}
+
+.track_icon:hover {
+	color: rgb(50, 50, 50);
+}
+
+.track_icon {
+	margin-left: 8px;
+	margin-top: 2px;
+	float: right;
+}
+
+.icon-download {
+	margin-right: 0px;
+}
+
+.index {
+    	float: left;
+	color: rgb(148, 153, 156);
+	width: 48px;
+	margin-right: 4px;
+	margin-left: 4px;
+	text-align: center;
+}
+
+.duration {
+	float: right;
+	color: rgb(148, 153, 156);
+	margin-left: 10px;
+	min-width: 80px;
+	text-align: right;
+	margin-right: 10px;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.providerIcon {
+	float: right;
+	min-width: 24px;
+	min-height: 24px;
+	margin-top: 10px;
+}
+
+.info {
+	margin-right: 0px;
+	margin-top: 10px;
+	margin-left: 60px;
+	overflow: hidden;
+	color: rgb(148, 153, 156);
+	font-size: 18px;
+}
+
+.info:hover {
+	color: rgb(50, 50, 50);
+	cursor: pointer;
+}
+
+#loading {
+	width:25px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 25px;
+}
+
+.btn {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:130px;
+	margin-bottom: 20px;
+}
+
+.playBtn {
+	width:30px;
+	float:left;
+	margin-left: 25px;
+	color: rgb(148, 153, 156);
+	margin-top: 13px;
+}
+.playBtn:hover {
+	color: rgb(50, 50, 50);
+	cursor: pointer;
+}

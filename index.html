@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html>
+      <head>
+          <title>Playable Playlist</title>
+          <meta name="viewport" content="width=device-width">
+          <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+          <link href="css/bootstrap.css" rel="stylesheet">
+          <link rel="stylesheet" href="css/style.css">
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
+          <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+          <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript"></script>
+          <script src="js/client.js" type="text/javascript"></script>
+          <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+
+           <style>
+          #playlistPanel { list-style-type: none; }
+          </style>
+          <script>
+              $(function() {
+                    $( "#playlistPanel" ).sortable({});
+              });
+          </script>
+    <style>
+      body{
+        font-family: 'Roboto', Serif;
+        font-weight: 300;
+      }
+    </style>
+      </head>
+  
+     <body>
+          <div class="container">
+
+              <div class="panel">
+                    <div class="headerThing">
+                          <h1><span class="purple">Playable Playlist</span></h1>
+                          <p>Encode your playlist into an MP3 file for a playlist that you can actually play!</p>
+                      </div>
+                 <input type="text" id="mainSearch" class="form-control" placeholder="Search...">
+                 <select id="providerSelect" class="searchSelect">
+                    <option value="1">FMA (Genre)</option>
+                    <option selected value="2">Rdio</option>
+                    <option value="3">SoundCloud</option>
+                </select>
+                 <div id="currentlyPlaying" class="currentPlayPanel">
+                   <div class="playlistEntry">
+                          <div id="playBtn" class="playBtn">
+                              <i class="icon-play"></i>
+                          </div>
+                            <div id="currentPlaying" class="info">Nothing Currently Playing :(</div>
+                      </div>
+                 </div>
+                 <ul id="playlistPanel" class="playlistList">
+                    <div style="width:170px;margin-left:auto;margin-right:auto; margin-bottom:25px">Your Playlist Is Empty :(</div>
+                    <img src='imgs/load.gif' id='loading' />
+                    <a id="uploadBtn" class="btn btn-large btn-success" href="#">Upload a Playlist</a>
+                    <input style="display:none" type="file">
+                 </ul>
+
+              </div>
+          </div>
+        <audio autoplay controls hidden="true"><source src="" id="playlistAudio" type='audio/mpeg'></audio>
+        <div id="apiswf"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+          <script src="js/rdio.js"></script>
+
+          <script src="//connect.soundcloud.com/sdk.js"></script>
+          <script>
+            SC.initialize({
+              client_id: "c3f1ba162d5e4efcc5307cabd1b2d8a6",
+              redirect_uri: "http://example.com/callback.html",
+            });
+          </script>
+
+      </body>
+</html>
